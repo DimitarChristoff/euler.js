@@ -37,7 +37,6 @@ console.timeEnd('Flip string via loop');
  * @param r* unused, var hack
  * @returns {Number}
  */
-
 function P(a,l,e,n,d,r,o){for(o='',d=0,e=l;e>=a;--e)for(n=l;n>=a;--n,(r=e*n,(r+o).split(o).reverse().join(o)==r&&d<r&&(d=r))){}return d}
 
 console.time('Array.reverse');
