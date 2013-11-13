@@ -1,0 +1,28 @@
+{
+	"node": true,
+	"browser": true,
+	"esnext": false,
+	"evil": false,
+	"bitwise": false,
+	"curly": false,
+	"eqeqeq": false,
+	"eqnull": false,
+	"immed": true,
+	"latedef": true,
+	"newcap": false,
+	"noarg": true,
+	"undef": true,
+	"unused": true,
+	"strict": false,
+	"sub": true,
+	"trailing": true,
+	"smarttabs": true,
+	"boss": true,
+	"asi": true,
+	"expr": true,
+	"-W041": false,
+	"quotmark": "single",
+	"globals": {
+		"console": false
+	}
+}
