@@ -11,4 +11,6 @@ $ node problem-1.js
 233168 64
 ```
 
-Though you are ok to use in a browser where applicable.
+Although, you are ok to use in a browser where applicable.
+
+For more info, see http://projecteuler.net/problems
