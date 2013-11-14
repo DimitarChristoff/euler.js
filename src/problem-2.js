@@ -1,6 +1,6 @@
 /**
  * returns the sum of all even Fibernacci numbers under 4,000,000, starting from 1
- * 73 chars - http://projecteuler.net/problem=2
+ * 73 bytes - http://projecteuler.net/problem=2
  * @param {Number} s starting, should be 1
  * @param {Number} m max, should be 4000000
  * @param r* unused, var hack
