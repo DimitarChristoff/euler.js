@@ -1,0 +1,28 @@
+{
+  "name": "euler.js",
+  "version": "0.0.1",
+  "readmeFilename": "README.md",
+  "gitHead": "1c82538cfe4065a9e7b74618c64edfc1cbcfbbc2",
+  "description": "Project Euler.js ================",
+  "main": "src/runner.js",
+  "dependencies": {
+    "minimatch": "~0.2.12"
+  },
+  "devDependencies": {
+    "glob": "~3.2.7",
+    "color": "~0.5.0",
+    "colors": "~0.6.2"
+  },
+  "scripts": {
+    "test": "src/runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DimitarChristoff/euler.js.git"
+  },
+  "author": "Dimitar Christoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DimitarChristoff/euler.js/issues"
+  }
+}

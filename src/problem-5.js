@@ -5,7 +5,7 @@
  * @param i* unused, var hack
  * @param c* unused, var hack
  * @returns {Number}
- */
+ *//*jshint -W041*/
 function m(r,i,c){i=0,c=function(e){return i%e!=0};while(i++,r.some(c)){}return i}
 
 console.time('new');

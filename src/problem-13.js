@@ -9,8 +9,8 @@ var s = (function(){
 	 * @param l* unused, var hack
 	 * @private
 	 * @returns {String}
-	 */
-	function b(a,b,r,o,l){
+	 *//*jshint -W041,-W007 */
+	function _(a,b,r,o,l){
 		a=a.split(''),b=b.split(''),r=a.length-b.length?b:a,o=0;
 		// equal the lengths of the 2
 		while(a.length!==b.length)r.unshift(0);
@@ -31,8 +31,8 @@ var s = (function(){
 	 * @param i* unused, var hack
 	 * @returns {String}
 	 */
-	return function s(d,l,c,i){c=d[i=0],l--;while(i<l)c=b(c,d[++i]);return c.slice(0,10)}
+	return function s(d,l,c,i){c=d[i=0],l--;while(i<l)c=_(c,d[++i]);return c.slice(0,10)}
 }());
 
 // read data and pass an array to the function
-console.log(s(require('fs').readFileSync('../data/data-13.txt', 'utf-8').split('\n'), 100), s.toString().length);
+console.log(s(require('fs').readFileSync('data/data-13.txt', 'utf-8').split('\n'), 100), s.toString().length);

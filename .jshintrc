@@ -20,7 +20,7 @@
 	"boss": true,
 	"asi": true,
 	"expr": true,
-	"-W041": false,
+	"latedef": false,
 	"quotmark": "single",
 	"globals": {
 		"console": false
