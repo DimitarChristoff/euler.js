@@ -17,10 +17,10 @@ longer but faster, 107 bytes, cached Math.sqrt(r):
 function p(r,i,m,e,s,_){for(s=0;r<i;r++){for(e=0,_=Math.sqrt(r),m=2;m<=_&&!e;e=0==r%m++);s+=r*+!e}return s}
                     ^^ +2bytes                   ^^ +3bytes            ^ +1byte
 
-Longer but faster still, 110 bytes, does odd numbers only and compares against int sqrt, not float, which 
-is upto 50% faster in V8 (node.js) and Safari:
+Longer but faster still, 110 bytes, does odd numbers only--need to start from 3-and compares against int sqrt, 
+not float, which is upto 50% faster in V8 (node.js) and Safari:
 
 function p(r,i,m,e,s,_){for(s=0;r<i;r+=2){for(e=!1,_=Math.sqrt(r)|0,m=2;m<=_&&!e;e=0==r%m++);s+=r*+!e}return s}
                                        ^ +1byte                  ^^ +2bytes
  */
-console.log(p(3,2000000), p.toString().length);
+console.log(p(2,2000000), p.toString().length);
