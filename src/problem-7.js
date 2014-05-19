@@ -10,5 +10,6 @@
  * @returns {Number}
  */
 function p(r,i,m,e,s,_){for(i=2,s=0;s!=r;i++){for(e=0,m=2;m<=Math.sqrt(i)&&!e;e=i%m++==0);s+=!e,_=i}return _}
-
+//console.time('problem 7')
 console.log(p(10001), p.toString().length);
+//console.timeEnd('problem 7');
