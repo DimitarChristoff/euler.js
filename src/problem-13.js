@@ -3,10 +3,10 @@ var s = (function(){
 	 * BigInt algo idea by Dawid Jakowiak - adds 2 BigInt numbers and returns a String that represents them
 	 * JavaScript cannot cope with nums beyond 32bit signed int so we do this as strings and arrays
 	 * @param {String} a Number A
-	 * @param {String} b
-	 * @param r* unused, var hack
-	 * @param o* unused, var hack
-	 * @param l* unused, var hack
+	 * @param {String} b Number B
+	 * @param {*=} r unused, var hack
+	 * @param {*=} o unused, var hack
+	 * @param {*=} l unused, var hack
 	 * @private
 	 * @returns {String}
 	 *//*jshint -W041,-W007 */
@@ -23,12 +23,12 @@ var s = (function(){
 
 
 	/**
-	 * Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
+	 * @description Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
 	 * 78 bytes - http://projecteuler.net/problem=13
 	 * @param {Array} d Array of numbers to add
 	 * @param {Number} l Length to consider
-	 * @param b* unused, var hack
-	 * @param i* unused, var hack
+	 * @param {*=} b unused, var hack
+	 * @param {*=} i unused, var hack
 	 * @returns {String}
 	 */
 	return function s(d,l,c,i){c=d[i=0],l--;while(i<l)c=_(c,d[++i]);return c.slice(0,10)}

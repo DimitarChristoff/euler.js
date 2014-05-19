@@ -3,8 +3,8 @@
  * 62 bytes - http://projecteuler.net/problem=6
  * @param {Number} q Starting number
  * @param {Number} u Ending number
- * @param a* unused, var hack
- * @param r* unused, var hack
+ * @param {*=} a unused, var hack
+ * @param {*=} r unused, var hack
  * @returns {Number}
  */
 function s(q,u,a,r){for(a=r=0;q<u;r+=q*q,a+=q++);return a*a-r}

@@ -1,9 +1,9 @@
 /**
- * In a range of numbers, return the lowest number that is evenly divisible by all of them
+ * @description In a range of numbers, return the lowest number that is evenly divisible by all of them
  * 82 bytes - http://projecteuler.net/problem=2
  * @param {Array} r range of numbers to consider
- * @param i* unused, var hack
- * @param c* unused, var hack
+ * @param {*=} i unused, var hack
+ * @param {*=} c unused, var hack
  * @returns {Number}
  *//*jshint -W041*/
 function m(r,i,c){i=0,c=function(e){return i%e!=0};while(i++,r.some(c)){}return i}

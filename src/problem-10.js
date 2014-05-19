@@ -1,12 +1,11 @@
 /**
- * Returns the sum of all primes between number 1 and number 2
+ * @description Returns the sum of all primes between number 1 and number 2
  * 101 bytes - http://projecteuler.net/problem=10
- * @param {Number} r
- * @param {Number} i
- * @param m* unused, var hack
- * @param e* unused, var hack
- * @param s* unused, var hack
- * @param _*
+ * @param {Number} r - Number 1
+ * @param {Number} i - Number 2
+ * @param {*=} m unused, var hack
+ * @param {*=} e unused, var hack
+ * @param {*=} s unused, var hack
  * @returns {Number}
  *//*jshint -W041*/
 function p(r,i,m,e,s){for(s=0;r<i;r++){for(e=0,m=2;m<=Math.sqrt(r)&&!e;e=0==r%m++);s+=r*+!e}return s}
