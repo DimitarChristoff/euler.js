@@ -11,6 +11,6 @@
  */
 function p(a,l,i,n,d,r){for(l='',r=function(n){return(n+l).split(l).reverse().join(l)==n},d=0,n=0;n<a;n++)r(n)&&r(n.toString(2))&&(d+=n);return d}
 
-console.time('palindome bases');
+console.time('palindrome bases');
 console.log(p(1000000), p.toString().length);
-console.timeEnd('palindome bases');
+console.timeEnd('palindrome bases');
