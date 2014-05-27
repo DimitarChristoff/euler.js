@@ -1,5 +1,5 @@
 /**
- * @description Returns the number of mondays falling on the first of the month between two dates
+ * @description Returns the number of Sundays falling on the first of the month between two dates
  * 95 bytes - http://projecteuler.net/problem=196
  * @param {Date} u - start date
  * @param {Date} n - end date
