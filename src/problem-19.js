@@ -1,6 +1,6 @@
 /**
  * @description Returns the number of Sundays falling on the first of the month between two dates
- * 95 bytes - http://projecteuler.net/problem=196
+ * 95 bytes - http://projecteuler.net/problem=19
  * @param {Date} u - start date
  * @param {Date} n - end date
  * @param {*=} d, unused var hack
