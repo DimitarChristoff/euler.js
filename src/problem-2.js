@@ -8,5 +8,5 @@
  * @param {*=} n unused, var hack
  * @returns {Number}
  *//*jshint -W041*/
-function f(s,m,r){return(r=s+s||1)<m?(0==r%2?r:0)+f(r,m,~~s):0}
+f=(s,m,r)=>(r=s+s||1)<m?(0==r%2?r:0)+f(r,m,~~s):0
 console.log(f(1,4000000), f.toString().length);

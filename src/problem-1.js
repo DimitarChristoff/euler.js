@@ -5,6 +5,6 @@
  * @param {*=} n unused, var hack
  * @param {*=} i unused, var hack
  * @returns {Number}
- *//*jshint -W041*/
-function s(m,n,i){for(n=i=0;++i<m;)0==i%3*i%5&&(n+=i);return n}
+ */
+s=(m,n=0,i=0)=>{for(;++i<m;)0==i%3*i%5&&(n+=i);return n}
 console.log(s(1000), s.toString().length);
