@@ -5,17 +5,14 @@
   "gitHead": "1c82538cfe4065a9e7b74618c64edfc1cbcfbbc2",
   "description": "Project Euler.js ================",
   "main": "src/runner.js",
-  "dependencies": {
-    "eslint": "^3.19.0",
-    "minimatch": "~0.2.12"
-  },
   "devDependencies": {
     "color": "~0.5.0",
     "colors": "~0.6.2",
+    "eslint": "^3.19.0",
     "glob": "~3.2.7"
   },
   "scripts": {
-    "test": "src/runner.js"
+    "start": "node src/runner.js"
   },
   "repository": {
     "type": "git",

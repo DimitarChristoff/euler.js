@@ -1,16 +1,16 @@
 #!/usr/bin/env node
-'use strict';
+const glob = require('glob')
+const path = require('path')
 
-var glob = require('glob'),
-	path = require('path'),
-	files = glob.sync('src/problem-*.js').sort();
+const files = glob.sync('src/problem-*.js').sort()
 
-require('colors');
+require('colors')
 
-process.cwd('src');
-files.forEach(function(f){
-	console.log('starting ' + f.yellow);
-	console.time(f.red)
-	require('./' + path.basename(f, '.js'));
-	console.timeEnd(f.red);
+process.cwd('src')
+files.forEach(f => {
+  console.log('____________________________')
+  console.log(` starting ${f.yellow}`)
+  console.time(f.red)
+  require(`./${path.basename(f, '.js')}`)
+  console.timeEnd(f.red)
 })
