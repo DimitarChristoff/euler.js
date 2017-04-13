@@ -6,15 +6,17 @@
  * @param {*=} c unused, var hack
  * @returns {Number}
  *//*jshint -W041*/
-function m(r,i,c){i=0,c=function(e){return i%e!=0};while(i++,r.some(c)){}return i}
+m=(r,i=0,c=e=>i%e!=0)=>{while(i++,r.some(c)){}return i}
 
-console.time('new');
-console.log(m(rangeTo(10)), m.toString().length);
-console.timeEnd('new');
 
 /**
  * @description Create an array range helper
  * @param {Number} i range size
  * @returns {Array}
  */
-function rangeTo(i){return i?rangeTo(i-1).concat(i):[]}
+rangeTo = i=>i?rangeTo(i-1).concat(i):[]
+
+range = rangeTo(10)
+console.time('new')
+console.log(m(range), m.toString().length)
+console.timeEnd('new')

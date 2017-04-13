@@ -7,6 +7,8 @@
  * @param {*=} r unused, var hack
  * @returns {Number}
  */
-function s(q,u,a,r){for(a=r=0;q<u;r+=q*q,a+=q++);return a*a-r}
+s=(q,u,a=0,r=0)=>{for(;q<u;r+=q*q,a+=q++);return a*a-r}
 
-console.log(s(1,100), s.toString().length);
+console.time('diff')
+console.log(s(1,100), s.toString().length)
+console.timeEnd('diff')
